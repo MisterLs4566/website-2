@@ -114,6 +114,19 @@
     }
 }
 
+@media all and (orientation:portrait) 
+{
+    .index-schedule
+    {
+        width: 100%; 
+        height: 100%; 
+        font-size: 10px;
+        text-align: center;
+        padding: 0;
+        word-wrap: break-word; 
+    }
+}
+
 #subjects
 {
     font-size: 18px;
