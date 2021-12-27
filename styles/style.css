@@ -1,0 +1,58 @@
+.site-navbar-list
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    background: rgb(61, 61, 61);
+    flex-direction: row;
+    flex-flow: row wrap;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.site-navbar-link
+{
+    display: block;
+    text-decoration: none;
+    background: rgb(61, 61, 61);
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.site-navbar-link:hover
+{
+    background: rgb(49, 49, 49);
+    cursor: hand;
+}
+
+.index-schedule
+{
+    width: 100%; 
+    height: 100%; 
+    font-size: 200%; 
+    text-align: center;
+}
+
+.site-header
+{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .site-navbar-list
+    {
+        flex-flow: column wrap;
+    }
+
+    .index-schedule
+    {
+        width: 100%; 
+        height: 100%; 
+        font-size: 20vw;
+        text-align: center;
+        padding: 0; 
+    }
+}
