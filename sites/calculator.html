@@ -1,0 +1,34 @@
+<head class="site-head">
+    <title>Index</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../icons/icon2.png">
+    <link rel="apple-touch-icon" href="../icons/icon2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <script src="../scripts/calculator.js"></script>
+</head>
+
+<body class="site-body">
+    <nav class="site-navbar">
+        <ul class="site-navbar-list">
+            <li class="site-navbar-item"><a class="site-navbar-link" href="../index.html">Stundenplan</a></li>
+            <li class="site-navbar-item"><a class="site-navbar-link" href="../sites/exams.html">Klausuren</a></li>
+            <li class="site-navbar-item"><a class="site-navbar-link" href="../sites/calculator.html" id="colored">Zinseszinsrechner</a></li>
+        </ul>
+    </nav>
+
+    <header class="site-header">
+        <h2>Zinseszinsrechner</h2>
+    </header>
+    
+    <main class="site-main">
+        <div class="overlay">
+            <input class="text-field" placeholder="Prozentsatz" value="" id="p"><br>
+            <br><input class="text-field" placeholder="alter Wert" value="" id="k"><br>
+            <br><input class="text-field" placeholder="neuer Wert" value="" id="k2"><br>
+            <br><input class="text-field" placeholder="Zeit" value="" id="t"><br>
+            <p><input class="calculate-button" type="button" value="löschen" id="clear" onclick="clearInput()">
+            <input class="calculate-button" type="button" value="berechnen" id="calc" onclick=calculate()></p>
+            </div>
+    </main>
+</body>
