@@ -18,7 +18,7 @@ function write_dates(subjects, date)
                     }
                     else 
                     {
-                        document.getElementById("subjects").innerHTML+=" in ";
+                        document.getElementById("subjects").innerHTML+=" vor ";
                     }
                     document.getElementById("subjects").innerHTML+= difference;
                     if (difference == 1)
