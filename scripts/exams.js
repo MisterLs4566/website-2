@@ -20,7 +20,14 @@ function write_dates(subjects, date)
                     {
                         document.getElementById("subjects").innerHTML+=" vor ";
                     }
-                    document.getElementById("subjects").innerHTML+= difference;
+                    if (difference>=0)
+                    {
+                       document.getElementById("subjects").innerHTML+= difference;
+                    }
+                    else
+                    {
+                       document.getElementById("subjects").innerHTML+= difference*-1;
+                    }
                     if (difference == 1)
                     {
                         document.getElementById("subjects").innerHTML+=" Tag";
