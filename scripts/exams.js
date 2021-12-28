@@ -11,8 +11,15 @@ function write_dates(subjects, date)
                 document.getElementById("subjects").innerHTML+=Object.values(subjects)[i][0];
                 if (Object.values(subjects)[i][1].split(" ")[1] == date[1])
                 {
-                    document.getElementById("subjects").innerHTML+=" in ";
                     var difference = parseInt(Object.values(subjects)[i][1].split(" ")[2])-parseInt(date[2]);
+                    if (difference >= 0)
+                    {
+                        document.getElementById("subjects").innerHTML+=" in ";
+                    }
+                    else 
+                    {
+                        document.getElementById("subjects").innerHTML+=" in ";
+                    }
                     document.getElementById("subjects").innerHTML+= difference;
                     if (difference == 1)
                     {
